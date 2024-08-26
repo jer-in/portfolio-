@@ -1,8 +1,10 @@
+import HeroSection from "./_components/HeroSection";
+
 const Homepage = () => {
   return (
     <main>
-      <div>
-        <h1 className="text-2xl">Hello World!</h1>
+      <div className="max-w-7xl">
+        <HeroSection />
       </div>
     </main>
   );
