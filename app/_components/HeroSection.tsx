@@ -1,6 +1,5 @@
-import { ChevronRight, Github, Linkedin, Youtube } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import ShinyButton from "./ui/ShinyButton";
-import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -27,27 +26,6 @@ const HeroSection = () => {
             highly functional web applications.
           </p>
           <ShinyButton icon={<ChevronRight />}>See My Work</ShinyButton>
-        </div>
-
-        <div className="flex items-center gap-2.5 absolute bottom-5 left-0">
-          <Link
-            href="https://github.com/andrijaweb"
-            className="p-2.5 bg-primary/10 hover:bg-primary/20 block rounded-md"
-          >
-            <Github className="size-5 text-primary" />
-          </Link>
-          <Link
-            href="https://www.linkedin.com/in/andrija-djordjevic-a7b794282/"
-            className="p-2.5 bg-primary/10 hover:bg-primary/20 block rounded-md"
-          >
-            <Linkedin className="size-5 text-primary" />
-          </Link>
-          <Link
-            href="https://github.com/andrijaweb"
-            className="p-2.5 bg-primary/10 hover:bg-primary/20 block rounded-md"
-          >
-            <Youtube className="size-5 text-primary" />
-          </Link>
         </div>
       </div>
     </>

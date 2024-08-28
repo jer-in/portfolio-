@@ -1,6 +1,6 @@
 const Skills = () => {
   return (
-    <div className="relative z-10 py-24">
+    <div className="relative z-10 py-32">
       <div className="space-y-4 mb-10">
         <h1 className="text-5xl font-bold text-stone-200">
           Technologies i currently work with
