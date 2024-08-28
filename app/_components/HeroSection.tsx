@@ -14,12 +14,15 @@ const HeroSection = () => {
         className="min-h-screen flex flex-col items-center justify-center relative"
         id="#home"
       >
-        <div className="flex gap-5 flex-col justify-center items-center relative z-10">
+        <div className="flex flex-col justify-center items-center relative z-10">
+          <p className="uppercase font-bold text-sm tracking-widest">
+            Based In Serbia
+          </p>
           <h1 className="text-7xl font-bold text-center max-w-5xl leading-tight tracking-wide text-stone-200">
             Quality Design &{" "}
             <span className="text-primary">Web Development</span> Synergy
           </h1>
-          <p className="text-lg text-white/70">
+          <p className="pt-5 pb-8 text-lg text-white/70">
             Hi, I&apos;m Andrija, I create intuitive, visually stunning and
             highly functional web applications.
           </p>
