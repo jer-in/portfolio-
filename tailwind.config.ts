@@ -17,8 +17,26 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        primary: {
+          DEFAULT: "#3B82F6",
+        },
         dark: {
           100: "#0a0a0a",
+          200: "#1A1A1A",
+          700: "#4D4D4D",
+        },
+      },
+      animation: {
+        shimmer: "shimmer 2s linear infinite",
+      },
+      keyframes: {
+        shimmer: {
+          from: {
+            backgroundPosition: "0 0",
+          },
+          to: {
+            backgroundPosition: "-200% 0",
+          },
         },
       },
     },
