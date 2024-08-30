@@ -14,7 +14,7 @@ const HeroSection = () => {
         className="pb-20 pt-36 sm:p-0 sm:min-h-screen flex flex-col items-center justify-center relative"
         id="#home"
       >
-        <div className="flex flex-col justify-center items-center relative z-10 text-center text-dark-200 dark:text-stone-200">
+        <div className="flex flex-col justify-center items-center relative z-10 text-center">
           <p className="uppercase font-bold text-sm tracking-widest">
             Based In Serbia
           </p>
