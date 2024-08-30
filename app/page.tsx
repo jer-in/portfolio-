@@ -1,13 +1,19 @@
-import { BriefcaseBusiness, Contact, House, UserRound } from "lucide-react";
+import {
+  BriefcaseBusiness,
+  Contact as ContactIco,
+  House,
+  UserRound,
+} from "lucide-react";
 import HeroSection from "./_components/HeroSection";
 import Skills from "./_components/Skills";
 import { Navbar } from "./_components/ui/Navbar";
+import Footer from "@/app/_components/Footer";
 
 const navItems = [
   { name: "Home", link: "#home", icon: <House /> },
   { name: "Work", link: "#work", icon: <BriefcaseBusiness /> },
   { name: "About", link: "#about", icon: <UserRound /> },
-  { name: "Contact", link: "#contact", icon: <Contact /> },
+  { name: "Contact", link: "#contact", icon: <ContactIco /> },
 ];
 
 const Homepage = () => {
@@ -17,6 +23,7 @@ const Homepage = () => {
         <Navbar navItems={navItems} />
         <HeroSection />
         <Skills />
+        <Footer />
       </div>
     </main>
   );
