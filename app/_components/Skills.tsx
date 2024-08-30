@@ -5,10 +5,10 @@ const Skills = () => {
   return (
     <div className="relative z-10 py-16 sm:py-24">
       <div className="space-y-4 mb-10">
-        <h1 className="text-3xl min-[430px]:text-4xl md:text-5xl font-bold text-stone-200">
+        <h1 className="text-3xl min-[430px]:text-4xl md:text-5xl font-bold dark:text-stone-200">
           Current technologies
         </h1>
-        <p className="text-sm min-[430px]:text-base max-w-lg md:max-w-3xl text-white/70">
+        <p className="text-sm min-[430px]:text-base max-w-lg md:max-w-3xl text-dark-200/70 dark:text-stone-200/70">
           I&apos;m proficient in a range of modern technologies that empower me
           to build highly functional solutions. These are some of my main
           technologies.
