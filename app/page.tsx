@@ -8,6 +8,7 @@ import HeroSection from "./_components/HeroSection";
 import Skills from "./_components/Skills";
 import { Navbar } from "./_components/ui/Navbar";
 import Footer from "@/app/_components/Footer";
+import ProjectsSection from "./_components/ProjectsSection";
 
 const navItems = [
   { name: "Home", link: "#home", icon: <House /> },
@@ -23,6 +24,7 @@ const Homepage = () => {
         <Navbar navItems={navItems} />
         <HeroSection />
         <Skills />
+        <ProjectsSection />
         <Footer />
       </div>
     </main>
