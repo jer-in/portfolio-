@@ -36,3 +36,21 @@ export const techCardsItems = [
     bgColor: "bg-[#F1502F]/20",
   },
 ];
+
+export const portfolioProjects = [
+  {
+    heading: "SocialSphere",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commod consequatur quae praesentium deleniti enim autem aliquid cum architecto doloremque! Aliquid consequatur atque ut molestias cumque ipsum.",
+    imageUrl: "/imgs/projects/portfolio-mockup1.png",
+    techStack: ["React", "TypeScript", "TailwindCSS", "Appwrite"],
+  },
+  {
+    position: "right",
+    heading: "Shoptidy",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi consequatur quae praesentium deleniti enim autem aliquid cum architecto doloremque! Aliquid consequatur atque ut molestias cumque ipsum.",
+    imageUrl: "/imgs/projects/portfolio-mockup2.png",
+    techStack: ["React", "TypeScript", "TailwindCSS", "Supabase"],
+  },
+];
