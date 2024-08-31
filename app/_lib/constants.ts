@@ -46,6 +46,13 @@ export const portfolioProjects = [
     techStack: ["React", "TypeScript", "TailwindCSS", "Appwrite"],
   },
   {
+    heading: "NextCut",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commod consequatur quae praesentium deleniti enim autem aliquid cum architecto doloremque! Aliquid consequatur atque ut molestias cumque ipsum.",
+    imageUrl: "/imgs/projects/portfolio-mockup3.jpg",
+    techStack: ["NextJS", "TypeScript", "TailwindCSS", "Appwrite"],
+  },
+  {
     position: "right",
     heading: "Shoptidy",
     description:
