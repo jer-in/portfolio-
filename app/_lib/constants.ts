@@ -64,3 +64,30 @@ export const portfolioProjects = [
     href: "https://github.com/andrijaweb/ecommerce-app",
   },
 ];
+
+export const tooltipItems = [
+  {
+    id: 1,
+    name: "Bogdan Aleksic",
+    designation: "Great job!",
+    image: "/imgs/avatars/bogdan.svg",
+  },
+  {
+    id: 2,
+    name: "Djordje Djurovic",
+    designation: "Incredibly responsible",
+    image: "/imgs/avatars/djordje.jpeg",
+  },
+  {
+    id: 3,
+    name: "Anthony Sean",
+    designation: "Highly recommended!",
+    image: "/imgs/avatars/anthony.jpg",
+  },
+  {
+    id: 4,
+    name: "Alex Finn",
+    designation: "Enjoyable experience.",
+    image: "/imgs/avatars/alex.jpg",
+  },
+];

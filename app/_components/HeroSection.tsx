@@ -1,6 +1,7 @@
 import { ChevronRight } from "lucide-react";
 import ShinyButton from "./ui/ShinyButton";
 import { AnimatedTooltip } from "./ui/Tooltip";
+import { tooltipItems } from "../_lib/constants";
 
 const HeroSection = () => {
   return (
@@ -28,34 +29,7 @@ const HeroSection = () => {
           </p>
           <ShinyButton icon={<ChevronRight />}>See My Work</ShinyButton>
           <div className="flex flex-row items-center justify-center mb-10 w-full mt-8">
-            <AnimatedTooltip
-              items={[
-                {
-                  id: 1,
-                  name: "Bogdan Aleksic",
-                  designation: "Great job!",
-                  image: "/imgs/avatars/bogdan.svg",
-                },
-                {
-                  id: 2,
-                  name: "Djordje Djurovic",
-                  designation: "Incredibly responsible",
-                  image: "/imgs/avatars/djordje.jpeg",
-                },
-                {
-                  id: 3,
-                  name: "Anthony Sean",
-                  designation: "Highly recommended!",
-                  image: "/imgs/avatars/anthony.jpg",
-                },
-                {
-                  id: 4,
-                  name: "Alex Finn",
-                  designation: "Enjoyable experience.",
-                  image: "/imgs/avatars/alex.jpg",
-                },
-              ]}
-            />
+            <AnimatedTooltip items={tooltipItems} />
           </div>
         </div>
       </div>
