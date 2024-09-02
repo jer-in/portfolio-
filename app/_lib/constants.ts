@@ -43,7 +43,8 @@ export const portfolioProjects = [
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commod consequatur quae praesentium deleniti enim autem aliquid cum architecto doloremque! Aliquid consequatur atque ut molestias cumque ipsum.",
     imageUrl: "/imgs/projects/portfolio-mockup1.png",
-    techStack: ["React", "TypeScript", "TailwindCSS", "Appwrite"],
+    techStack: ["React", "CRUD", "TailwindCSS", "Appwrite"],
+    href: "https://github.com/andrijaweb/socialmedia-reactapp",
   },
   {
     position: "right",
@@ -52,12 +53,14 @@ export const portfolioProjects = [
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commod consequatur quae praesentium deleniti enim autem aliquid cum architecto doloremque! Aliquid consequatur atque ut molestias cumque ipsum.",
     imageUrl: "/imgs/projects/portfolio-mockup3.jpg",
     techStack: ["NextJS", "TypeScript", "TailwindCSS", "Appwrite"],
+    href: "https://github.com/andrijaweb/nextCut-app",
   },
   {
     heading: "Shoptidy",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi consequatur quae praesentium deleniti enim autem aliquid cum architecto doloremque! Aliquid consequatur atque ut molestias cumque ipsum.",
     imageUrl: "/imgs/projects/portfolio-mockup2.png",
-    techStack: ["React", "TypeScript", "TailwindCSS", "Supabase"],
+    techStack: ["React", "Redux", "TypeScript", "TailwindCSS", "Supabase"],
+    href: "https://github.com/andrijaweb/ecommerce-app",
   },
 ];
