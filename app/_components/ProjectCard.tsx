@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ProjectTechnologiesMini from "./ProjectTechnologiesMini";
+import Link from "next/link";
 
 interface ProjectProps {
   position?: string;
@@ -7,6 +8,7 @@ interface ProjectProps {
   description: string;
   imageUrl: string;
   techStack: string[];
+  href: string;
 }
 
 const ProjectCard = ({ project }: { project: ProjectProps }) => {
@@ -16,11 +18,12 @@ const ProjectCard = ({ project }: { project: ProjectProps }) => {
     description,
     imageUrl,
     techStack,
+    href,
   } = project;
 
   return (
     <div
-      className={`p-5 rounded-xl border border-dark-700/20 dark:border-dark-400 grid ${
+      className={`p-5 rounded-xl border border-dark-700 dark:border-dark-400 grid ${
         position === "right"
           ? "lg:grid-cols-[3fr_1fr]"
           : "lg:grid-cols-[1.5fr_3fr]"
@@ -39,9 +42,13 @@ const ProjectCard = ({ project }: { project: ProjectProps }) => {
         </p>
         <ProjectTechnologiesMini techStack={techStack} />
         <div className="mt-auto">
-          <button className="w-full text-center hover:text-stone-200 text-sm sm:text-base border border-dark-400 hover:bg-dark-300 transition-colors duration-200 py-2 sm:py-2.5 rounded-full font-medium">
+          <Link
+            href={href}
+            target="_blank"
+            className="block text-center hover:text-stone-200 text-sm sm:text-base border border-dark-400 hover:bg-dark-300 transition-colors duration-200 py-2 sm:py-2.5 rounded-full font-medium"
+          >
             Source Code
-          </button>
+          </Link>
         </div>
       </div>
 
