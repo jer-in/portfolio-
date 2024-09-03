@@ -2,6 +2,7 @@ import { ChevronRight } from "lucide-react";
 import ShinyButton from "./ui/ShinyButton";
 import { AnimatedTooltip } from "./ui/Tooltip";
 import { tooltipItems } from "../_lib/constants";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -27,7 +28,9 @@ const HeroSection = () => {
             Hi, I&apos;m Andrija, I create intuitive, visually stunning and
             highly functional web applications.
           </p>
-          <ShinyButton icon={<ChevronRight />}>See My Work</ShinyButton>
+          <ShinyButton icon={<ChevronRight />}>
+            <Link href="#work">See My Work</Link>
+          </ShinyButton>
           <div className="flex flex-row items-center justify-center mb-10 w-full mt-8">
             <AnimatedTooltip items={tooltipItems} />
           </div>

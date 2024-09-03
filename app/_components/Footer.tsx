@@ -4,7 +4,10 @@ import ShinyButton from "./ui/ShinyButton";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col justify-center antialiased relative border border-dark-300 rounded-xl mb-5">
+    <div
+      className="flex flex-col justify-center antialiased relative border border-dark-300 rounded-xl mb-5"
+      id="contact"
+    >
       <div>
         <div className="space-y-8 p-10">
           <h1 className="text-5xl font-bold max-w-2xl leading-[110%] relative z-10">
