@@ -3,6 +3,7 @@ import ShinyButton from "./ui/ShinyButton";
 import { AnimatedTooltip } from "./ui/Tooltip";
 import { tooltipItems } from "../_lib/constants";
 import Link from "next/link";
+import { TextGenerateEffect } from "./ui/TextGenerate";
 
 const HeroSection = () => {
   return (
@@ -20,10 +21,14 @@ const HeroSection = () => {
           <p className="uppercase font-bold text-sm tracking-widest">
             Based In Serbia
           </p>
-          <h1 className="text-[40px] md:text-6xl lg:text-7xl font-bold text-center max-w-5xl leading-tight tracking-wide">
+          {/* <h1 className="text-[40px] md:text-6xl lg:text-7xl font-bold text-center max-w-5xl leading-tight tracking-wide">
             Quality Design &{" "}
             <span className="text-primary">Web Development</span> Synergy
-          </h1>
+          </h1> */}
+          <TextGenerateEffect
+            words="Quality Design & Web Development Synergy"
+            className="text-[40px] md:text-6xl lg:text-7xl font-bold text-center max-w-5xl leading-snug tracking-wide"
+          />
           <p className="pt-5 pb-8 text-sm sm:text-base md:text-lg text-dark-200 dark:text-stone-200/70">
             Hi, I&apos;m Andrija, I create intuitive, visually stunning and
             highly functional web applications.
