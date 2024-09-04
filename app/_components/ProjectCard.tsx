@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import ProjectTechnologiesMini from "./ProjectTechnologiesMini";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 interface ProjectProps {
   position?: string;
@@ -22,7 +25,11 @@ const ProjectCard = ({ project }: { project: ProjectProps }) => {
   } = project;
 
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y: 75 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: 0.25 }}
       className={`p-5 rounded-xl border border-dark-700 dark:border-dark-400 grid ${
         position === "right"
           ? "lg:grid-cols-[3fr_1fr]"
@@ -61,7 +68,7 @@ const ProjectCard = ({ project }: { project: ProjectProps }) => {
           className="hover:scale-110 transition-transform duration-700 cursor-pointer"
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
