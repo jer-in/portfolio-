@@ -1,4 +1,4 @@
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, Download } from "lucide-react";
 import ShinyButton from "./ui/ShinyButton";
 import { AnimatedTooltip } from "./ui/Tooltip";
 import { tooltipItems } from "../_lib/constants";
@@ -33,9 +33,19 @@ const HeroSection = () => {
             Hi, I&apos;m Andrija, I create intuitive, visually stunning and
             highly functional web applications.
           </p>
-          <ShinyButton icon={<ChevronRight />}>
-            <Link href="#work">See My Work</Link>
-          </ShinyButton>
+          <div className="flex flex-col sm:flex-row items-center gap-4">
+            <ShinyButton icon={<ChevronRight />}>
+              <Link href="#work">See My Work</Link>
+            </ShinyButton>
+            <a
+              href="/resume/CV_en.pdf"
+              download
+              className="flex items-center gap-2.5 group"
+            >
+              <Download className="group-hover:text-primary transition-colors duration-200" />
+              <span className="font-semibold">Download CV</span>
+            </a>
+          </div>
           <div className="flex flex-row items-center justify-center mb-10 w-full mt-8">
             <AnimatedTooltip items={tooltipItems} />
           </div>
