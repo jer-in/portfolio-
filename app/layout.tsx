@@ -6,7 +6,7 @@ import { ThemeProvider } from "./_components/ThemeProvider";
 const raleway = Raleway({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Andrija's Portfolio Website",
+  title: "Andrija - Skilled Web Developer",
   description: "Beautiful portfolio that will get me hired :)",
 };
 
