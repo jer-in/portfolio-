@@ -41,7 +41,7 @@ export const portfolioProjects = [
   {
     heading: "SocialSphere",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commod consequatur quae praesentium deleniti enim autem aliquid cum architecto doloremque! Aliquid consequatur atque ut molestias cumque ipsum.",
+      "Beautifully designed social media application with all functionalities of modern social app. Users can create, edit, and delete posts, as well as explore posts from others. The app features profile management where users can view and edit their profiles, and also save posts for later.",
     imageUrl: "/imgs/projects/portfolio-mockup1.png",
     techStack: ["React", "CRUD", "TailwindCSS", "Appwrite"],
     href: "https://github.com/andrijaweb/socialmedia-reactapp",
@@ -50,7 +50,7 @@ export const portfolioProjects = [
     position: "right",
     heading: "NextCut",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commod consequatur quae praesentium deleniti enim autem aliquid cum architecto doloremque! Aliquid consequatur atque ut molestias cumque ipsum.",
+      "A responsive web application designed to schedule and manage barber appointments. Potentional customers can create their account and schedule a new haircut. There is clearly defined period of time that is awailable for bookings. Admin have information about all appointments on dashboard page, and he is able to manage them in few clicks.",
     imageUrl: "/imgs/projects/portfolio-mockup3.jpg",
     techStack: ["NextJS", "TypeScript", "TailwindCSS", "Appwrite"],
     href: "https://github.com/andrijaweb/nextCut-app",
@@ -58,7 +58,7 @@ export const portfolioProjects = [
   {
     heading: "Shoptidy",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi consequatur quae praesentium deleniti enim autem aliquid cum architecto doloremque! Aliquid consequatur atque ut molestias cumque ipsum.",
+      "A modern website with all ecommerce functionalities. It includes features like product browsing, shopping cart, user authentication, ordering a product... The application is developed with react + typescript for frontend part, and Supabase as backend.",
     imageUrl: "/imgs/projects/portfolio-mockup2.png",
     techStack: ["React", "Redux", "TypeScript", "TailwindCSS", "Supabase"],
     href: "https://github.com/andrijaweb/ecommerce-app",
