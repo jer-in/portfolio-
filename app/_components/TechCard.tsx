@@ -20,7 +20,7 @@ const TechCard = ({
           width={1000}
           height={1000}
           alt={`${name} logo`}
-          className="size-8"
+          className={`size-8 ${name === "NextJS" ? "dark:invert" : ""}`}
         />
       </div>
       <div>

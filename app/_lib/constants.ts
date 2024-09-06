@@ -21,7 +21,7 @@ export const techCardsItems = [
     name: "NextJS",
     description: "React framework",
     imageUrl: "/imgs/logos/nextjs.svg",
-    bgColor: "bg-white/15",
+    bgColor: "bg-dark-200/10 dark:bg-white/10",
   },
   {
     name: "Tailwind",
