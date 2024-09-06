@@ -42,8 +42,10 @@ const HeroSection = () => {
               download
               className="flex items-center gap-2.5 group"
             >
-              <Download className="group-hover:text-primary transition-colors duration-200" />
-              <span className="font-semibold">Download CV</span>
+              <Download className="text-primary" />
+              <span className="group-hover:text-white/70 transition-colors duration-200 font-semibold">
+                Download CV
+              </span>
             </a>
           </div>
           <div className="flex flex-row items-center justify-center mb-10 w-full mt-8">
