@@ -21,7 +21,9 @@ const Footer = () => {
             to collaborate!
           </h1>
 
-          <ShinyButton>Schedule call</ShinyButton>
+          <ShinyButton>
+            <Link href="mailto:andrijawebd@gmail.com">Schedule call</Link>
+          </ShinyButton>
         </div>
 
         <div className="mt-16 p-10 border-t border-dark-200 dark:border-white/10 flex flex-col md:flex-row justify-between gap-10 md:gap-0">
