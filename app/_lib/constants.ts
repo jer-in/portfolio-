@@ -82,12 +82,12 @@ export const tooltipItems = [
     id: 3,
     name: "Anthony Sean",
     designation: "Highly recommended!",
-    image: "/imgs/avatars/anthony.jpg",
+    image: "/imgs/avatars/Anthony.jpg",
   },
   {
     id: 4,
     name: "Alex Finn",
     designation: "Enjoyable experience.",
-    image: "/imgs/avatars/alex.jpg",
+    image: "/imgs/avatars/Alex.jpg",
   },
 ];
