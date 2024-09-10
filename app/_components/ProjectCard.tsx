@@ -18,7 +18,7 @@ const ProjectCard = ({ project }: { project: ProjectProps }) => {
   const { heading, imageUrl, techStack, href } = project;
 
   return (
-    <div className="bg-dark-200 rounded-lg p-4 sm:p-8 space-y-8">
+    <div className="bg-[#F3F4F3] dark:bg-dark-200 rounded-lg p-4 sm:p-8 space-y-8">
       <Link href="/" className="rounded-lg overflow-hidden block">
         <Image
           src={imageUrl}
@@ -36,7 +36,7 @@ const ProjectCard = ({ project }: { project: ProjectProps }) => {
             href="/"
             className="p-3 bg-primary hover:bg-primary/80 transition-colors duration-200 rounded-lg self-start sm:self-end"
           >
-            <MoveUpRight className="size-5 sm:size-8 text-dark-200" />
+            <MoveUpRight className="size-5 sm:size-8 text-[#F3F4F3] dark:text-dark-200" />
           </Link>
         </div>
       </div>
