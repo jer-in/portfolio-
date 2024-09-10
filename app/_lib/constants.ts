@@ -39,7 +39,9 @@ export const techCardsItems = [
 
 export const portfolioProjects = [
   {
+    id: "socialsphere",
     heading: "SocialSphere",
+    subheading: "connect with your friends online",
     description:
       "Beautifully designed social media application with all functionalities of modern social app. Users can create, edit, and delete posts, as well as explore posts from others. The app features profile management where users can view and edit their profiles, and also save posts for later.",
     imageUrl: "/imgs/projects/portfolio-mockup1.png",
@@ -51,10 +53,13 @@ export const portfolioProjects = [
       "TailwindCSS",
       "TanStack",
     ],
-    href: "https://github.com/andrijaweb/socialmedia-reactapp",
+    liveDemoUrl: "https://socialspherenetwork.vercel.app",
+    sourceCodeUrl: "https://github.com/andrijaweb/socialmedia-reactapp",
   },
   {
+    id: "nextcut",
     heading: "NextCut",
+    subheading: "a fresh cut in a few clicks",
     description:
       "A responsive web application designed to schedule and manage barber appointments. Potentional customers can create their account and schedule a new haircut. There is clearly defined period of time that is awailable for bookings. Admin have information about all appointments on dashboard page, and he is able to manage them in few clicks.",
     imageUrl: "/imgs/projects/portfolio-mockup3.jpg",
@@ -65,10 +70,13 @@ export const portfolioProjects = [
       "TailwindCSS",
       "Advanced forms",
     ],
-    href: "https://github.com/andrijaweb/nextCut-app",
+    liveDemoUrl: "https://nextcut.vercel.app",
+    sourceCodeUrl: "https://github.com/andrijaweb/nextCut-app",
   },
   {
+    id: "shoptidy",
     heading: "Shoptidy",
+    subheading: "a modern e-commerce website",
     description:
       "A modern website with all ecommerce functionalities. It includes features like product browsing, shopping cart, user authentication, ordering a product... The application is developed with react + typescript for frontend part, and Supabase as backend.",
     imageUrl: "/imgs/projects/portfolio-mockup2.png",
@@ -80,7 +88,8 @@ export const portfolioProjects = [
       "TailwindCSS",
       "shadcn/ui",
     ],
-    href: "https://github.com/andrijaweb/ecommerce-app",
+    liveDemoUrl: "https://shoptidy.vercel.app",
+    sourceCodeUrl: "https://github.com/andrijaweb/ecommerce-app",
   },
 ];
 

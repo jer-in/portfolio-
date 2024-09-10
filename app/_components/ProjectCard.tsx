@@ -6,16 +6,18 @@ import Link from "next/link";
 import ProjectTechnologiesMini from "./ProjectTechnologiesMini";
 
 interface ProjectProps {
-  position?: string;
+  id: string;
   heading: string;
+  subheading: string;
   description: string;
   imageUrl: string;
   techStack: string[];
-  href: string;
+  liveDemoUrl: string;
+  sourceCodeUrl: string;
 }
 
 const ProjectCard = ({ project }: { project: ProjectProps }) => {
-  const { heading, imageUrl, techStack, href } = project;
+  const { id, heading, imageUrl, techStack } = project;
 
   return (
     <div className="bg-[#F3F4F3] dark:bg-dark-200 rounded-lg p-4 sm:p-8 space-y-8">
@@ -33,7 +35,7 @@ const ProjectCard = ({ project }: { project: ProjectProps }) => {
         <div className="mt-4 flex flex-col sm:flex-row justify-between gap-5">
           <ProjectTechnologiesMini techStack={techStack} />
           <Link
-            href="/"
+            href={`/work/${id}`}
             className="p-3 bg-primary hover:bg-primary/80 transition-colors duration-200 rounded-lg self-start sm:self-end"
           >
             <MoveUpRight className="size-5 sm:size-8 text-[#F3F4F3] dark:text-dark-200" />
