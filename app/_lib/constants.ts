@@ -39,6 +39,24 @@ export const techCardsItems = [
 
 export const portfolioProjects = [
   {
+    id: "shoptidy",
+    heading: "Shoptidy",
+    subheading: "a modern e-commerce website",
+    description:
+      "A modern website with all ecommerce functionalities. It includes features like product browsing, shopping cart, user authentication, ordering a product... The application is developed with react + typescript for frontend part, and Supabase as backend.",
+    imageUrl: "/imgs/projects/portfolio-mockup2.png",
+    techStack: [
+      "TypeScript",
+      "React",
+      "Redux",
+      "Supabase",
+      "TailwindCSS",
+      "shadcn/ui",
+    ],
+    liveDemoUrl: "https://shoptidy.vercel.app",
+    sourceCodeUrl: "https://github.com/andrijaweb/ecommerce-app",
+  },
+  {
     id: "socialsphere",
     heading: "SocialSphere",
     subheading: "connect with your friends online",
@@ -72,24 +90,6 @@ export const portfolioProjects = [
     ],
     liveDemoUrl: "https://nextcut.vercel.app",
     sourceCodeUrl: "https://github.com/andrijaweb/nextCut-app",
-  },
-  {
-    id: "shoptidy",
-    heading: "Shoptidy",
-    subheading: "a modern e-commerce website",
-    description:
-      "A modern website with all ecommerce functionalities. It includes features like product browsing, shopping cart, user authentication, ordering a product... The application is developed with react + typescript for frontend part, and Supabase as backend.",
-    imageUrl: "/imgs/projects/portfolio-mockup2.png",
-    techStack: [
-      "TypeScript",
-      "React",
-      "Redux",
-      "Supabase",
-      "TailwindCSS",
-      "shadcn/ui",
-    ],
-    liveDemoUrl: "https://shoptidy.vercel.app",
-    sourceCodeUrl: "https://github.com/andrijaweb/ecommerce-app",
   },
 ];
 
