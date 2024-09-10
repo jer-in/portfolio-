@@ -43,16 +43,28 @@ export const portfolioProjects = [
     description:
       "Beautifully designed social media application with all functionalities of modern social app. Users can create, edit, and delete posts, as well as explore posts from others. The app features profile management where users can view and edit their profiles, and also save posts for later.",
     imageUrl: "/imgs/projects/portfolio-mockup1.png",
-    techStack: ["React", "CRUD", "TailwindCSS", "Appwrite"],
+    techStack: [
+      "JavaScript",
+      "React",
+      "CRUD",
+      "Appwrite",
+      "TailwindCSS",
+      "TanStack",
+    ],
     href: "https://github.com/andrijaweb/socialmedia-reactapp",
   },
   {
-    position: "right",
     heading: "NextCut",
     description:
       "A responsive web application designed to schedule and manage barber appointments. Potentional customers can create their account and schedule a new haircut. There is clearly defined period of time that is awailable for bookings. Admin have information about all appointments on dashboard page, and he is able to manage them in few clicks.",
     imageUrl: "/imgs/projects/portfolio-mockup3.jpg",
-    techStack: ["NextJS", "TypeScript", "TailwindCSS", "Appwrite"],
+    techStack: [
+      "TypeScript",
+      "NextJS",
+      "Appwrite",
+      "TailwindCSS",
+      "Advanced forms",
+    ],
     href: "https://github.com/andrijaweb/nextCut-app",
   },
   {
@@ -60,7 +72,14 @@ export const portfolioProjects = [
     description:
       "A modern website with all ecommerce functionalities. It includes features like product browsing, shopping cart, user authentication, ordering a product... The application is developed with react + typescript for frontend part, and Supabase as backend.",
     imageUrl: "/imgs/projects/portfolio-mockup2.png",
-    techStack: ["React", "Redux", "TypeScript", "TailwindCSS", "Supabase"],
+    techStack: [
+      "TypeScript",
+      "React",
+      "Redux",
+      "Supabase",
+      "TailwindCSS",
+      "shadcn/ui",
+    ],
     href: "https://github.com/andrijaweb/ecommerce-app",
   },
 ];

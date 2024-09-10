@@ -1,14 +1,23 @@
+import Link from "next/link";
 import { portfolioProjects } from "../_lib/constants";
 import ProjectCard from "./ProjectCard";
+import ShinyButton from "./ui/ShinyButton";
+import { ChevronRight } from "lucide-react";
 
 const ProjectsSection = () => {
   return (
     <div className="py-32" id="work">
-      <h2 className="text-3xl min-[430px]:text-4xl md:text-5xl font-bold dark:text-stone-200">
-        Projects
-      </h2>
+      <div className="flex items-center justify-between">
+        <h2 className="text-3xl min-[430px]:text-4xl md:text-5xl font-bold dark:text-stone-200">
+          My portfolio
+        </h2>
 
-      <div className="mt-8 space-y-5">
+        <ShinyButton icon={<ChevronRight />}>
+          <Link href="https://github.com/andrijaweb">All Projects</Link>
+        </ShinyButton>
+      </div>
+
+      <div className="grid grid-cols-2 gap-4 mt-8">
         {portfolioProjects.map((project) => (
           <ProjectCard key={project.heading} project={project} />
         ))}
