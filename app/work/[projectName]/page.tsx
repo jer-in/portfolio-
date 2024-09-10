@@ -16,6 +16,21 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+export function generateMetadata({
+  params,
+}: {
+  params: { projectName: string };
+}) {
+  const projectId = params.projectName;
+  const project = portfolioProjects.find((project) => project.id === projectId);
+
+  if (!project) return { title: "Not Found" };
+
+  return {
+    title: `Project ${project.heading}`,
+  };
+}
+
 const navItems = [
   { name: "Home", link: "/", icon: <House /> },
   { name: "Work", link: "/#work", icon: <BriefcaseBusiness /> },
