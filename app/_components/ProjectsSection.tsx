@@ -7,7 +7,7 @@ import { ChevronRight } from "lucide-react";
 const ProjectsSection = () => {
   return (
     <div className="py-32" id="work">
-      <div className="flex items-center justify-between">
+      <div className="flex gap-4 flex-col sm:flex-row sm:items-center justify-between">
         <h2 className="text-3xl min-[430px]:text-4xl md:text-5xl font-bold dark:text-stone-200">
           My portfolio
         </h2>
@@ -17,7 +17,7 @@ const ProjectsSection = () => {
         </ShinyButton>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 mt-8">
+      <div className="grid lg:grid-cols-2 gap-4 mt-8">
         {portfolioProjects.map((project) => (
           <ProjectCard key={project.heading} project={project} />
         ))}
