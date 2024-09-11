@@ -76,7 +76,7 @@ const ProjectOverview = ({ params }: { params: { projectName: string } }) => {
             <Image src={imageUrl} width={2000} height={1000} alt="portfolio" />
           </div>
 
-          <div className="mt-8 mb-32 flex justify-between">
+          <div className="mt-8 mb-32 flex flex-col md:flex-row gap-10 md:gap-5 justify-between">
             <div className="flex-1">
               <h2 className="text-3xl min-[430px]:text-4xl md:text-5xl dark:text-stone-200 mb-5">
                 Project Overview
