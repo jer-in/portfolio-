@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import ProjectTechnologiesMini from "./ProjectTechnologiesMini";
 
+import { motion } from "framer-motion";
+
 interface ProjectProps {
   id: string;
   heading: string;
@@ -20,7 +22,13 @@ const ProjectCard = ({ project }: { project: ProjectProps }) => {
   const { id, heading, imageUrl, techStack } = project;
 
   return (
-    <div className="bg-[#F3F4F3] dark:bg-dark-200 rounded-lg p-4 sm:p-8 space-y-8">
+    <motion.div
+      initial={{ opacity: 0, y: 75 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: 0.25 }}
+      className="bg-[#F3F4F3] dark:bg-dark-200 rounded-lg p-4 sm:p-8 space-y-8"
+    >
       <Link href={`/work/${id}`} className="rounded-lg overflow-hidden block">
         <Image
           src={imageUrl}
@@ -42,7 +50,7 @@ const ProjectCard = ({ project }: { project: ProjectProps }) => {
           </Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
