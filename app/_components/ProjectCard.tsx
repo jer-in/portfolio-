@@ -21,7 +21,7 @@ const ProjectCard = ({ project }: { project: ProjectProps }) => {
 
   return (
     <div className="bg-[#F3F4F3] dark:bg-dark-200 rounded-lg p-4 sm:p-8 space-y-8">
-      <Link href="/" className="rounded-lg overflow-hidden block">
+      <Link href={`/work/${id}`} className="rounded-lg overflow-hidden block">
         <Image
           src={imageUrl}
           width={1000}
