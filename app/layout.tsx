@@ -10,7 +10,8 @@ export const metadata: Metadata = {
     template: "Andrija - %s",
     default: "Andrija - Skilled Web Developer",
   },
-  description: "Beautiful portfolio that will get me hired :)",
+  description:
+    "Andrija Djordjevic, web developer. Creating intuitive, visually stunning and highly functional web applications.",
 };
 
 export default function RootLayout({
