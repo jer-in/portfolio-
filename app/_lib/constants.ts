@@ -35,6 +35,18 @@ export const techCardsItems = [
     imageUrl: "/imgs/logos/git.svg",
     bgColor: "bg-[#F1502F]/20",
   },
+  {
+    name: "Supabase",
+    description: "Backend tool",
+    imageUrl: "/imgs/logos/supabase.svg",
+    bgColor: "bg-[#3ECF8E]/20",
+  },
+  {
+    name: "Appwrite",
+    description: "Backend tool",
+    imageUrl: "/imgs/logos/appwrite.svg",
+    bgColor: "bg-[#F02D65]/20",
+  },
 ];
 
 export const portfolioProjects = [
