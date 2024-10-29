@@ -1,47 +1,92 @@
+"use client";
+
+import AnimatedParagraph from "@/app/_components/AnimatedParagraph";
+import { testimonialItems } from "@/app/_lib/constants";
+import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 const Testimonials = () => {
+  const [curIndex, setCurIndex] = useState(0);
+
+  const goToTestimonial = (index: number) => {
+    setCurIndex(index);
+  };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurIndex((prevIndex) =>
+        prevIndex === testimonialItems.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 10000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const currentTestimonial = testimonialItems[curIndex];
+
   return (
     <div className="mb-32 space-y-10">
-      <div className="flex justify-center items-center gap-2.5">
-        <Star fill="#3B82F6" strokeWidth={0} className="size-12" />
-        <Star fill="#3B82F6" strokeWidth={0} className="size-12" />
-        <Star fill="#3B82F6" strokeWidth={0} className="size-12" />
-        <Star fill="#3B82F6" strokeWidth={0} className="size-12" />
-        <Star fill="#3B82F6" strokeWidth={0} className="size-12" />
-      </div>
+      <motion.div
+        className="flex justify-center items-center gap-2.5"
+        key={`stars-${curIndex}`}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.5 }}
+      >
+        {Array.from({ length: currentTestimonial.stars }).map((_, index) => (
+          <Star
+            key={index}
+            fill="#3B82F6"
+            strokeWidth={0}
+            className="size-12"
+          />
+        ))}
+      </motion.div>
 
-      <p className="mx-auto text-3xl font-medium italic leading-10 text-center max-w-[68.625rem]">
-        “Working with Andrija was a very smooth experience from start to finish.
-        He not only brings strong technical skills to front-end development, but
-        his attention to detail and commitment to delivering pixel-perfect
-        designs made a huge difference in our project. He is enthusiastic in
-        suggesting improvements. Always ready to answer questions or provide
-        updates. If you&apos;re looking for a reliable developer who brings
-        creativity and efficiency to the table, Andrija is the right person!”
-      </p>
+      <motion.div
+        key={`description-${curIndex}`}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.5 }}
+      >
+        <AnimatedParagraph paragraph={currentTestimonial.description} />
+      </motion.div>
 
-      <div className="flex items-center justify-center gap-4">
+      <motion.div
+        className="flex items-center justify-center gap-4"
+        key={`avatar-${curIndex}`}
+        initial={{ opacity: 0, x: -70 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         <div className="rounded-full overflow-hidden inline-block">
           <Image
-            src="/imgs/avatars/Alex.jpg"
+            src={currentTestimonial.image}
             alt="avatar"
             width={60}
             height={60}
           />
         </div>
         <div>
-          <h3 className="text-lg font-semibold">Alex Finn</h3>
-          <p className="text-sm opacity-70">CEO at DigitalityLab</p>
+          <h3 className="text-lg font-semibold">{currentTestimonial.name}</h3>
+          <p className="text-sm opacity-70">{currentTestimonial.proffesion}</p>
         </div>
-      </div>
+      </motion.div>
 
       <div className="flex justify-center items-center gap-1">
-        <button className="w-12 h-1 bg-primary rounded-full"></button>
-        <button className="w-12 h-1 bg-[#333333] rounded-full"></button>
-        <button className="w-12 h-1 bg-[#333333] rounded-full"></button>
-        <button className="w-12 h-1 bg-[#333333] rounded-full"></button>
+        {testimonialItems.map((testimonial, i) => (
+          <button
+            key={i}
+            onClick={() => goToTestimonial(i)}
+            className={`w-12 h-1 ${
+              curIndex === i
+                ? "bg-primary duration-1000"
+                : "bg-[#333333] hover:bg-[#444444] duration-300"
+            } rounded-full transition-colors`}
+          ></button>
+        ))}
       </div>
     </div>
   );
