@@ -22,7 +22,7 @@ const Testimonials = () => {
     }, 10000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [curIndex]);
 
   const currentTestimonial = testimonialItems[curIndex];
 
