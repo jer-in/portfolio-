@@ -6,28 +6,37 @@ import { motion } from "framer-motion";
 import { Star } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
 
 const Testimonials = () => {
   const [curIndex, setCurIndex] = useState(0);
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+    threshold: 0.5,
+  });
 
   const goToTestimonial = (index: number) => {
     setCurIndex(index);
   };
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurIndex((prevIndex) =>
-        prevIndex === testimonialItems.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 10000);
+    let interval: NodeJS.Timeout;
+
+    if (inView) {
+      interval = setInterval(() => {
+        setCurIndex((prevIndex) =>
+          prevIndex === testimonialItems.length - 1 ? 0 : prevIndex + 1
+        );
+      }, 10000);
+    }
 
     return () => clearInterval(interval);
-  }, [curIndex]);
+  }, [curIndex, inView]);
 
   const currentTestimonial = testimonialItems[curIndex];
 
   return (
-    <div className="mb-32 space-y-10">
+    <div ref={ref} className="mb-32 space-y-10">
       <motion.div
         className="flex justify-center items-center gap-2.5"
         key={`stars-${curIndex}`}
