@@ -38,7 +38,7 @@ const Testimonials = () => {
   return (
     <div ref={ref} className="mb-32 space-y-10">
       <motion.div
-        className="flex justify-center items-center gap-2.5"
+        className="flex justify-center items-center gap-2 sm:gap-2.5"
         key={`stars-${curIndex}`}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -49,7 +49,7 @@ const Testimonials = () => {
             key={index}
             fill="#3B82F6"
             strokeWidth={0}
-            className="size-12"
+            className="size-10 sm:size-12"
           />
         ))}
       </motion.div>
