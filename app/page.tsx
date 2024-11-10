@@ -8,7 +8,7 @@ import { Navbar } from "@/app/_components/ui/Navbar";
 import HeroSection from "@/app/_components/HeroSection";
 import Skills from "@/app/_components/Skills";
 import ProjectsSection from "@/app/_components/ProjectsSection";
-import Testimonials from "@/app/_components/Testimonials";
+//import Testimonials from "@/app/_components/Testimonials";
 import Footer from "@/app/_components/Footer";
 
 const navItems = [
