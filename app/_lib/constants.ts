@@ -81,7 +81,7 @@ export const portfolioProjects = [
     subheading: "an AR-based application for computer building education",
     description:
       "An augmented reality application designed to teach users how to assemble computers with visual guidance. This app uses Unity for development, Blender for 3D modeling, and Inkly for visual cues, providing an interactive and immersive learning experience.",
-    imageUrl: "/imgs/projects/portfolio-revivelab.png",
+    imageUrl: "/imgs/projects/portfolio-reviveLab.png",
     techStack: [
       "Unity",
       "Blender",
