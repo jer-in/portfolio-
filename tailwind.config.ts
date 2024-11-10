@@ -13,19 +13,22 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: "class",
   theme: {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#3B82F6",
+          DEFAULT: "#f5f5f5", // Neutral main color in gray
         },
         dark: {
-          100: "#0a0a0a",
-          200: "#1A1A1A",
-          300: "#262626",
-          400: "#404040",
-          700: "#4D4D4D",
+          100: "#0D1117", // Dark background
+          200: "#161B22", // Darker background
+          300: "#21262D", // Secondary background
+          400: "#30363D", // Panel background
+          500: "#484F58", // Mid-gray for dividers
+          600: "#6E7681", // Lighter mid-gray for text secondary
+          700: "#8B949E", // Muted text gray
+          800: "#C9D1D9", // Lighter text color
+          900: "#F0F6FC", // Near white for high contrast
         },
       },
       animation: {

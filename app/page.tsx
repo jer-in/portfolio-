@@ -26,7 +26,6 @@ const Homepage = () => {
         <HeroSection />
         <Skills />
         <ProjectsSection />
-        <Testimonials />
         <Footer />
       </div>
     </main>
