@@ -10,8 +10,12 @@ export const metadata: Metadata = {
     template: "Kiran - %s",
     default: "Kiran TS -- Full Stack Developer",
   },
-  description:
-    "Kiran T S, Full Stack Developer.",
+  description: "Kiran T S, Full Stack Developer.",
+  icons: {
+    icon: '/icon1.png',         // should work if in the public folder
+    shortcut: '/icon1.png',
+    apple: '/icon1.png',
+  },
 };
 
 export default function RootLayout({
