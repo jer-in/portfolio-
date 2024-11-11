@@ -1,4 +1,4 @@
-import { ChevronRight, Download } from "lucide-react";
+import { ChevronRight, Download, Github, Instagram, LinkedinIcon } from "lucide-react";
 import ShinyButton from "./ui/ShinyButton";
 import Link from "next/link";
 import { TextGenerateEffect } from "./ui/TextGenerate";
@@ -16,11 +16,6 @@ const HeroSection = () => {
         id="#home"
       >
         <div className="flex flex-col justify-center items-center relative z-10 text-center">
-          
-          {/* <h1 className="text-[40px] md:text-6xl lg:text-7xl font-bold text-center max-w-5xl leading-tight tracking-wide">
-             Connect&{" "}
-            <span className="text-primary">Code, Connect</span> Create
-          </h1> */}
           <TextGenerateEffect
             words="Code, Connect, Create."
             className="text-[40px] md:text-6xl lg:text-7xl font-bold text-center max-w-5xl leading-snug tracking-wide"
@@ -44,6 +39,34 @@ const HeroSection = () => {
             </a>
           </div>
           
+          {/* Social Media Icons */}
+          <div className="flex gap-6 mt-8">
+          <a 
+              href="https://linkedin.com/in/kiran-t-shibu/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-dark-200 dark:text-stone-200/70 hover:text-primary dark:hover:text-primary transition-colors duration-200"
+            >
+              <LinkedinIcon size={24} />
+            </a>
+            <a 
+              href="https://github.com/git-kirants" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-dark-200 dark:text-stone-200/70 hover:text-primary dark:hover:text-primary transition-colors duration-200"
+            >
+              <Github size={24} />
+            </a>
+            <a 
+              href="https://instagram.com/ig_kirants" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-dark-200 dark:text-stone-200/70 hover:text-primary dark:hover:text-primary transition-colors duration-200"
+            >
+              <Instagram size={24} />
+            </a>
+            
+          </div>
         </div>
       </div>
     </>
