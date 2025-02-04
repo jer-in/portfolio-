@@ -75,7 +75,7 @@ export const portfolioProjects = [
       "Android Development",
       "Augmented Reality",
     ],
-    liveDemoUrl: "https://puzzlerpuzzle.vercel.app",
+    liveDemoUrl: "https://github.com/Edwin-Sunny/AR-Shooting-Game",
     sourceCodeUrl: "https://github.com/Edwin-Sunny/AR-Shooting-Game",
   },
 ];
