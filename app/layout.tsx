@@ -7,10 +7,10 @@ const raleway = Raleway({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    template: "Kiran - %s",
-    default: "Kiran TS -- Full Stack Developer",
+    template: "Jerin - %s",
+    default: "Jerin E V -- Full Stack Developer",
   },
-  description: "Kiran T S, Full Stack Developer.",
+  description: "Jerin EV, Aspiring Developer.",
   icons: {
     icon: '/icon1.png',         // should work if in the public folder
     shortcut: '/icon1.png',

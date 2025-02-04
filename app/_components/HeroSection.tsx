@@ -17,18 +17,18 @@ const HeroSection = () => {
       >
         <div className="flex flex-col justify-center items-center relative z-10 text-center">
           <TextGenerateEffect
-            words="Code, Connect, Create."
+            words="Code. Play. Repeat."
             className="text-[40px] md:text-6xl lg:text-7xl font-bold text-center max-w-5xl leading-snug tracking-wide"
           />
           <p className="pt-5 pb-8 text-sm sm:text-base md:text-lg text-dark-200 dark:text-stone-200/70">
-            Hi, 👋 I&apos;m Kiran, Full Stack Developer.
+            Hi, 👋 I&apos;m Jerin, Aspiring Game Developer.
           </p>
           <div className="flex flex-col sm:flex-row items-center gap-4">
             <ShinyButton icon={<ChevronRight />}>
               <Link href="#work">See My Work</Link>
             </ShinyButton>
             <a
-              href="/resume/CV_en.pdf"
+              href="/resume/Resume_Jerin-1.pdf"
               download
               className="flex items-center gap-2.5 group"
             >
@@ -42,7 +42,7 @@ const HeroSection = () => {
           {/* Social Media Icons */}
           <div className="flex gap-6 mt-8">
           <a 
-              href="https://linkedin.com/in/kiran-t-shibu/" 
+              href="https://www.linkedin.com/in/jerin-vincent-25a030252/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-dark-200 dark:text-stone-200/70 hover:text-primary dark:hover:text-primary transition-colors duration-200"
@@ -50,7 +50,7 @@ const HeroSection = () => {
               <LinkedinIcon size={24} />
             </a>
             <a 
-              href="https://github.com/git-kirants" 
+              href="https://github.com/jer-in" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-dark-200 dark:text-stone-200/70 hover:text-primary dark:hover:text-primary transition-colors duration-200"
@@ -58,7 +58,7 @@ const HeroSection = () => {
               <Github size={24} />
             </a>
             <a 
-              href="https://instagram.com/ig_kirants" 
+              href="https://instagram.com/jerin.e.v" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-dark-200 dark:text-stone-200/70 hover:text-primary dark:hover:text-primary transition-colors duration-200"
